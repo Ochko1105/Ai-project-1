@@ -11,7 +11,7 @@ import {
 import { RiAiGenerate2 } from "react-icons/ri";
 
 import { Button } from "../ui/button";
-import { SiGoogledocs } from "react-icons/si";
+
 import { Textarea } from "../ui/textarea";
 import { GrGallery } from "react-icons/gr";
 const TextToImage = () => {

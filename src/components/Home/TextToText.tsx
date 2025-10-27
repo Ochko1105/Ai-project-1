@@ -63,7 +63,7 @@ const TextToText = () => {
           placeholder="Orts todorhoiloh"
           value={prompt2}
           onChange={(e) => setPrompt2(e.target.value)}
-        ></Textarea>
+        />
         <Button className="w-[92px] ml-[450px]" onClick={extractIngredients}>
           Generate
         </Button>

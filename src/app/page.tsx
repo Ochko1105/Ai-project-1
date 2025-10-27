@@ -10,10 +10,13 @@ export function Project() {
     <div className="flex w-[580px] h-fit max-w-sm flex-col gap-6 ml-100 mt-50">
       <Tabs defaultValue="account">
         <TabsList>
+          {/* TAB TRIGER */}
           <TabsTrigger value="Image analysis">Image analysis</TabsTrigger>
+          {/* TAB TRIGER */}
           <TabsTrigger value="ingredient recognition">
             Ingredient recognition
           </TabsTrigger>
+          {/* TAB TRIGER */}
           <TabsTrigger value="Image creator">Image creator</TabsTrigger>
         </TabsList>
 

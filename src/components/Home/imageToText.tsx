@@ -18,17 +18,14 @@ const ImageToText = () => {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [pev, setPev] = useState("");
-  const [image, setImage] = useState<File>();
   const formData = new FormData();
   formData.append("file", prompt as File); // input type="file" сонгосон зураг
 
   const HandleonImage = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      setImage(e.target.files[0]);
       const file = e.target.files[0];
       const filepev = URL.createObjectURL(file);
       setPev(filepev);
-      setText(filepev);
       setPrompt(file);
     }
   };

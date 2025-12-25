@@ -83,50 +83,6 @@ export function Project() {
           <TextToImage />
         </TabsContent>
       </Tabs>
-      <div>
-        <Drawer direction="right">
-          <DrawerTrigger>
-            <img
-              src="/Button.svg
-      "
-            ></img>
-          </DrawerTrigger>
-          <DrawerContent className="h-100 w-100">
-            <DrawerHeader>
-              <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-              <DrawerDescription>
-                <div className="text-4xl ">{resdata}</div>
-              </DrawerDescription>
-            </DrawerHeader>
-            <DrawerFooter>
-              <div className="flex items-center">
-                <Input
-                  type="text"
-                  className="border w-70 border-black "
-                  onChange={(e) => setText(e.target.value)}
-                />
-                <Button onClick={HandleOnPost}>Messageiig ilgeeh</Button>
-              </div>
-
-              <DrawerClose>
-                <Button variant="outline">Cancel</Button>
-              </DrawerClose>
-            </DrawerFooter>
-          </DrawerContent>
-        </Drawer>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <img
-              src="/Button.svg
-      "
-            ></img>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            className="w-56"
-            align="start"
-          ></DropdownMenuContent>
-        </DropdownMenu>
-      </div>
     </div>
   );
 }
